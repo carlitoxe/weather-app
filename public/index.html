@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="my-12 mx-20 flex flex-col md:justify-between md:flex-row md:items-center">
+        <a href="/">
+            <div class="logo flex gap-6 items-center justify-center md:justify-start">
+                <img class="w-14 rounded-full" src="../src/assets/logo.jpg" alt="logo">
+                <h1 class="text-4xl">Weather App</h1>
+            </div>
+        </a>
+  <!--       <a href="/">
+            <div>
+                <h1>Hola</h1>
+            </div>
+        </a> -->
+    </header>
+    <main class="mx-20 my-12">
+        <div class="input-container text-center">
+            <form action class="flex flex-col items-center gap-6 md:block">
+              <input class="bg-gray-200 h-12 w-72 rounded-lg text-center border border-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1" type="text" autocomplete="country-name" placeholder="Enter the name of the city">
+              <button type="button" class="md:ml-6 w-36 rounded-xl bg-sky-600 h-12 w-40 text-white hover:bg-sky-700">Get weather</button>    
+            </form>
+          </div>
+        <div class="cards-container flex flex-wrap justify-center items-center gap-9 mt-10"></div>
+    </main>
+    <footer>
+        <p class="text-center mt-48">
+            Made with 💚 by Toxe
+        </p>
+    </footer>
+    <script type="module" src="../src/index.js"></script>
+</body>
+</html>
